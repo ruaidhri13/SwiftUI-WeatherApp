@@ -26,19 +26,19 @@ struct ContentView: View {
                     ExtractedView(dayOfWeek: "TUE",
                                   imageName: isNight ? "cloud.fog.fill" : "cloud.sun.fill",
                                   temperature: isNight ? 23 : 74)
-                    
+
                     ExtractedView(dayOfWeek: "WED",
                                   imageName: isNight ? "moon.stars.fill" : "sun.max.fill",
                                   temperature: isNight ? 19 : 70)
-                    
+
                     ExtractedView(dayOfWeek: "THU",
                                   imageName: isNight ? "cloud.moon.rain.fill" : "wind",
                                   temperature: isNight ? 27 :66)
-                    
+
                     ExtractedView(dayOfWeek: "FRI",
                                   imageName: isNight ? "wind.snow" : "sunset.fill",
                                   temperature: isNight ? 11 : 60)
-                    
+
                     ExtractedView(dayOfWeek: "SAT",
                                   imageName: isNight ? "cloud.fill" : "cloud.rain.fill",
                                   temperature: isNight ? 30 : 55)
@@ -48,7 +48,7 @@ struct ContentView: View {
                 Button {
                     isNight.toggle()
                 } label: {
-                    WeatherButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
+                    WeatherButton(title: isNight ? "Change Day Time" : "Change Night Time", textColor: .blue, backgroundColor: .white)
                 }
                 
                 Spacer()
